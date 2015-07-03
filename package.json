@@ -2,7 +2,7 @@
   "name": "ctx-connect",
   "version": "2.0.0",
   "description": "Mixin for React to connect Reflux store from context",
-  "main": "index.js",
+  "main": "ctx-connect.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
