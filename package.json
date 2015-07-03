@@ -1,0 +1,24 @@
+{
+  "name": "context-connect",
+  "version": "1.0.0",
+  "description": "Mixin for React to connect Reflux store from context",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iofjuupasli/context-connect.git"
+  },
+  "author": "Tretyak Valery <iofjuupasli@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iofjuupasli/context-connect/issues"
+  },
+  "homepage": "https://github.com/iofjuupasli/context-connect#readme",
+  "dependencies": {
+    "ramda": "^0.15.1",
+    "react": "^0.13.3",
+    "reflux": "^0.2.8"
+  }
+}
