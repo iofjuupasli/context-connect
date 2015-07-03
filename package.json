@@ -1,6 +1,6 @@
 {
-  "name": "context-connect",
-  "version": "1.0.0",
+  "name": "ctx-connect",
+  "version": "2.0.0",
   "description": "Mixin for React to connect Reflux store from context",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iofjuupasli/context-connect.git"
+    "url": "git+https://github.com/iofjuupasli/ctx-connect.git"
   },
   "author": "Tretyak Valery <iofjuupasli@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iofjuupasli/context-connect/issues"
+    "url": "https://github.com/iofjuupasli/ctx-connect/issues"
   },
-  "homepage": "https://github.com/iofjuupasli/context-connect#readme",
+  "homepage": "https://github.com/iofjuupasli/ctx-connect#readme",
   "dependencies": {
     "ramda": "^0.15.1",
     "react": "^0.13.3",
