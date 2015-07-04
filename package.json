@@ -1,6 +1,6 @@
 {
   "name": "ctx-connect",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Mixin for React to connect Reflux store from context",
   "main": "ctx-connect.js",
   "scripts": {
