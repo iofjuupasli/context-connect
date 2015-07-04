@@ -1,8 +1,8 @@
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['react', 'ramda', 'reflux'], factory);
+        define(['react/addons', 'ramda', 'reflux'], factory);
     } else if (typeof exports === 'object') {
-        module.exports = factory('react', 'ramda', 'reflux');
+        module.exports = factory('react/addons', 'ramda', 'reflux');
     } else {
         root.contextConnect = factory(root.React, root.R, root.Reflux);
     }
