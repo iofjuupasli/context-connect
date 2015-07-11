@@ -7,9 +7,14 @@
         root.contextConnect = factory(root.React, root.R, root.Reflux);
     }
 }(this, function (React, R, Reflux) {
-    return function (storeName, stateKeyName) {
+    return function (storeName, stateKeyName, getter) {
         if (!stateKeyName) {
             stateKeyName = storeName;
+        }
+        if (!getter) {
+            getter = function (store) {
+                return store.getInitialState();
+            };
         }
         return R.merge(Reflux.ListenerMethods, {
             contextTypes: {
@@ -17,14 +22,16 @@
             },
             getInitialState: function () {
                 var state = {};
-                state[stateKeyName] = this.context.stores[storeName].getInitialState();
+                state[stateKeyName] = getter.call(this,
+                    this.context.stores[storeName]);
                 return state;
             },
             componentDidMount: function () {
                 var store = this.context.stores[storeName];
                 this.listenTo(store, function (v) {
                     var state = {};
-                    state[stateKeyName] = v;
+                    state[stateKeyName] = getter.call(this,
+                        this.context.stores[storeName]);
                     this.setState(state);
                 }.bind(this));
             },
